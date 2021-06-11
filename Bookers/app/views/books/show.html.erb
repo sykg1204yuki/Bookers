@@ -1,0 +1,29 @@
+<% if flash[:notice] %>
+  <section class="notifications">
+    <p><%= flash[:notice] %></p>
+  </section>
+<% end %>
+
+
+
+<div class="show-main">
+  <table width="90%" cellspacing="20">
+    <tr>
+      <th  width="10%">Title:</th>
+      <td width="90%">
+        <%= @book.title %>
+      </th>
+    </tr>
+    <tr>
+      <th>Body:</th>
+      <td>
+        <%= @book.body %>
+      </th>
+    </tr>
+  </table>
+</div>
+<div class="show-link">
+  <%= link_to 'Edit', edit_book_path(@book) %>
+    |
+  <%= link_to 'Back', books_path %>
+</div>
