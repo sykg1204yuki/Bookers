@@ -21,6 +21,11 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   list-style:none;
 }
+
+.link a:hover{
+  background-color:black;
+  color:white;
+}
 /*ここからtopページ　CSS*/
 .top-page {
   width: 90%;
@@ -36,6 +41,8 @@
 .top-text{
   margin-top:20px;
 }
+
+
 
 /*ここからmainページCSS*/
 header{
@@ -76,6 +83,11 @@ table{
   text-align:center;
 }
 
+/*ここからバリデーション、エラーメッセージCSS*/
+.errors-message{
+  color:red;
+}
+
 /*ここからshowページCSS*/
 .show-main{
   width:90%;
@@ -85,4 +97,9 @@ table{
 .show-link{
   width:93%;
   margin:0 auto;
+}
+
+/*ここからEditページCSS*/
+.edit-link{
+  margin-top:20px;
 }
